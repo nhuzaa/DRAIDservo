@@ -28,7 +28,7 @@ def index(request):
 
     if x >= 1.0:
         servo.xServoDown()
-    elif y < 0:
+    elif x < 0:
         servo.xServoUp()
 
     return HttpResponse("Hello, world. You're at the polls index.")
