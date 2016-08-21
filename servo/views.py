@@ -12,21 +12,21 @@ def index(request):
     if request.GET.get('x'):
         x = request.GET['x']
         print("x = " + x)
-        x = int(x)
+        x = float(x)
     if request.GET.get('y'):
         y = request.GET['y']
         print("y = " + y)
-        y = int(y)
+        y = float(y)
     # if request.GET.get('z'):
     #     z = request.GET['z']
     #     print("z = " + z)
 
-    if y >= 1:
+    if y >= 1.0:
         servo.yServoUp()
     else:
         servo.yServoDown()
 
-    if x >= 1:
+    if x >= 1.0:
         servo.xServoUp()
     else:
         servo.xServoDown()
