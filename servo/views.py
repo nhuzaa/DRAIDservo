@@ -12,11 +12,11 @@ def index(request):
     if request.GET.get('x'):
         x = request.GET['x']
         print("x = " + x)
-
+        x = int(x)
     if request.GET.get('y'):
         y = request.GET['y']
         print("y = " + y)
-
+        y = int(y)
     # if request.GET.get('z'):
     #     z = request.GET['z']
     #     print("z = " + z)
