@@ -22,13 +22,13 @@ def index(request):
     #     print("z = " + z)
 
     if y >= 1.0:
-        servo.yServoUp()
-    elif y < 0:
         servo.yServoDown()
+    elif y < 0:
+        servo.yServoUp()
 
     if x >= 1.0:
-        servo.xServoUp()
-    elif y < 0:
         servo.xServoDown()
+    elif y < 0:
+        servo.xServoUp()
 
     return HttpResponse("Hello, world. You're at the polls index.")
