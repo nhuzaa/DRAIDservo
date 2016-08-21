@@ -23,12 +23,12 @@ def index(request):
 
     if y >= 1.0:
         servo.yServoUp()
-    else:
+    elif y < 0:
         servo.yServoDown()
 
     if x >= 1.0:
         servo.xServoUp()
-    else:
+    elif y < 0:
         servo.xServoDown()
 
     return HttpResponse("Hello, world. You're at the polls index.")
