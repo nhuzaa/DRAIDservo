@@ -2,9 +2,9 @@ import json
 
 from django.http import HttpResponse
 
-from servoctrl import servo
+from . import servoctrl
 
-servo = servo()
+servo = servoctrl.servo()
 
 
 def index(request):
